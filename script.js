@@ -36,7 +36,7 @@
     });
 
     key('j', function(ev) {
-        if (idx < 9) {
+        if (idx < $('h3.r a').length-1) {
             idx++;
             select(true);
         }
