@@ -9,9 +9,17 @@
         if (focus) {link.focus(); }
         return link;
     };
-    key('return', function() {
+    key('⌘+return', function(ev) {
+        var link = select();
+        window.open(link.attr('href'));
+        ev.stopPropagation();
+        ev.preventDefault();
+    });
+    key('return', function(ev) {
         var link = select();
         location.href = link.attr('href');
+        ev.stopPropagation();
+        ev.preventDefault();
     });
 
     var node = null;
