@@ -14,7 +14,6 @@
         location.href = link.attr('href');
     });
 
-    var tmt = null;
     var node = null;
 
     $(function() {
