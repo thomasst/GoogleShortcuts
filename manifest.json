@@ -6,8 +6,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*.google.com/*",
-        "https://*.google.com/*"
+        "http://*.google.com/search?*",
+        "https://*.google.com/search?*"
       ],
       "js": ["jquery-1.7.2.min.js", "keymaster.min.js", "script.js"],
       "run_at": "document_start"
